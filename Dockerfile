@@ -1,7 +1,7 @@
 FROM python:3.5.2-slim
 
 RUN apt-get update
-RUN apt-get g++ libc-dev unixodbc-dev
+RUN apt-get install g++ libc-dev unixodbc-dev
 
 RUN pip install pyodbc
 RUN pip install pandas
